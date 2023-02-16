@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using S7.Net;
+
+namespace TiaportalHaberlesme
+{
+    public partial class Form1 : Form
+    {
+        Plc plcim;
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnBaglantiKur_Click(object sender, EventArgs e)
+        {
+            plcim = new Plc(CpuType.S71200, "192.168.0.5", 0, 1);
+            plcim.Open();
+            if (plcim.IsConnected)
+            {
+                lblBaglantidurum.Text = "Plc'ye Baglantı Başarılı";
+                lblBaglantidurum.ForeColor = Color.Green;
+            }
+            timer1.Start();
+        }
+
+        private void btnBaglantiKes_Click(object sender, EventArgs e)
+        {
+            plcim.Close();
+            lblBaglantidurum.Text = "Plc Baglantı Kesildi";
+            lblBaglantidurum.ForeColor = Color.Red;
+            timer1.Stop();
+        
+        }
+        
+
+        private void btnVeri_al_Click(object sender, EventArgs e)
+        {
+            txbStart.Text = (plcim.Read("DB1.DBX0.0")).ToString();
+            txbStop.Text = (plcim.Read("DB1.DBX0.1")).ToString();
+            txbAcilstop.Text = (plcim.Read("DB1.DBX0.2")).ToString();
+            txbIlerde.Text = (plcim.Read("DB1.DBX0.3")).ToString();
+            txbGeride.Text = (plcim.Read("DB1.DBX0.4")).ToString();
+            txbHome.Text = (plcim.Read("DB1.DBX0.5")).ToString();
+            txbYSicaklik.Text = (plcim.Read("DB1.DBX0.6")).ToString();
+            txbYBasinc.Text = (plcim.Read("DB1.DBX0.7")).ToString();
+            txbQ0_0.Text = (plcim.Read("Q0.0")).ToString();
+            txbQ0_1.Text = (plcim.Read("Q0.1")).ToString();
+            txbQ0_2.Text = (plcim.Read("Q0.2")).ToString();
+            txbQ0_3.Text = (plcim.Read("Q0.3")).ToString();
+            txbQ0_4.Text = (plcim.Read("Q0.4")).ToString();
+            txbQ0_5.Text = (plcim.Read("Q0.5")).ToString();
+            txbQ0_6.Text = (plcim.Read("Q0.6")).ToString();
+            txbQ0_7.Text = (plcim.Read("Q0.7")).ToString();
+
+            txbHiz.Text = (plcim.Read(DataType.DataBlock,1,2,VarType.Int,1)).ToString();
+            txbEncoder.Text = (plcim.Read(DataType.DataBlock,1,4,VarType.Int,1)).ToString();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            plcim.Write("DB1.DBX6.0", true);
+            plcim.Write("DB1.DBX6.1", true);
+            plcim.Write("DB1.DBX6.2", true);
+            plcim.Write("DB1.DBX6.3", true);
+            plcim.Write("DB1.DBX6.4", true);
+            plcim.Write("DB1.DBX6.5", true);
+            plcim.Write("DB1.DBX6.6", true);
+            plcim.Write("DB1.DBX6.7", true);
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            plcim.Write("DB1.DBX6.0", false);
+            plcim.Write("DB1.DBX6.1", false);
+            plcim.Write("DB1.DBX6.2", false);
+            plcim.Write("DB1.DBX6.3", false);
+            plcim.Write("DB1.DBX6.4", false);
+            plcim.Write("DB1.DBX6.5", false);
+            plcim.Write("DB1.DBX6.6", false);
+            plcim.Write("DB1.DBX6.7", false);
+        }
+    }
+}

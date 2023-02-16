@@ -1,0 +1,13 @@
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\bin\Debug\TiaportalHaberlesme.exe.config
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\bin\Debug\TiaportalHaberlesme.exe
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\bin\Debug\TiaportalHaberlesme.pdb
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\bin\Debug\S7.Net.dll
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\bin\Debug\S7.Net.xml
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.csproj.AssemblyReference.cache
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.Form1.resources
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.Properties.Resources.resources
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.csproj.GenerateResource.cache
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.csproj.CoreCompileInputs.cache
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.csproj.CopyComplete
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.exe
+C:\Users\DELLWIN10NB\source\repos\TiaportalHaberlesme\TiaportalHaberlesme\obj\Debug\TiaportalHaberlesme.pdb
