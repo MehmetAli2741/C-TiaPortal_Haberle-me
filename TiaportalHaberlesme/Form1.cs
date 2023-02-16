@@ -31,7 +31,7 @@ namespace TiaportalHaberlesme
                 btnBaglantiKur.BackColor = Color.Green;
                 btnBaglantiKur.Text = "PLC'ye Baglantı Kuruldu";
                 btnBaglantiKes.BackColor = Color.WhiteSmoke;
-                btnBaglantiKes.Text = "Baglantı Kesildi";
+                btnBaglantiKes.Text = "PLC'le Baglantı Kesildi";
                
 
 
