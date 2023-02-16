@@ -29,7 +29,7 @@ namespace TiaportalHaberlesme
                 lblBaglantidurum.Text = "Plc'ye Baglantı Başarılı";
                 lblBaglantidurum.ForeColor = Color.Green;
                 btnBaglantiKur.BackColor = Color.Green;
-                btnBaglantiKur.Text = "Baglantı Kuruldu";
+                btnBaglantiKur.Text = "PLC'ye Baglantı Kuruldu";
                 btnBaglantiKes.BackColor = Color.WhiteSmoke;
                 btnBaglantiKes.Text = "Baglantı Kesildi";
                
